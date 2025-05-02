@@ -81,7 +81,7 @@ def send_sms():
             server.login(EMAIL, PASSWORD)
             for email in to_emails:
                 msg = MIMEText(message)
-                msg['Subject'] = 'NTP Alert'
+                msg['Subject'] = 'NTP Server Notification'
                 msg['From'] = EMAIL
                 msg['To'] = email
                 server.send_message(msg)
